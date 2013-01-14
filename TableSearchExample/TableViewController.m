@@ -77,6 +77,8 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
+    if(tableView == [[self searchDisplayController] searchResultsTableView])
+        return 1;
     return [[[UILocalizedIndexedCollation currentCollation] sectionIndexTitles] count];
 }
 
