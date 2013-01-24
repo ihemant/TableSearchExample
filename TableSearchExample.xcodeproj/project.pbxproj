@@ -20,6 +20,14 @@
 		474572D916956D2000CDCEDD /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 474572D716956D2000CDCEDD /* TableViewController.xib */; };
 		47601FB51696D9A6002868EE /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47601FB31696D9A6002868EE /* DetailViewController.m */; };
 		47601FB61696D9A6002868EE /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47601FB41696D9A6002868EE /* DetailViewController.xib */; };
+		47D2D77C16B149E5002304FA /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D2D77816B149E5002304FA /* bar.png */; };
+		47D2D77D16B149E5002304FA /* disclosure.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D2D77916B149E5002304FA /* disclosure.png */; };
+		47D2D77E16B149E5002304FA /* sectionBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D2D77A16B149E5002304FA /* sectionBg.png */; };
+		47D2D77F16B149E5002304FA /* shrink.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D2D77B16B149E5002304FA /* shrink.png */; };
+		47E8B41816A437A30034D294 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E8B41716A437A30034D294 /* Country.m */; };
+		47E8B41C16A437F20034D294 /* SQLiteOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E8B41B16A437F20034D294 /* SQLiteOperation.m */; };
+		47E8B41E16A438010034D294 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E8B41D16A438010034D294 /* libsqlite3.dylib */; };
+		47E8B42016A44CF30034D294 /* country.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 47E8B41F16A44CF30034D294 /* country.sqlite */; };
 		47EC5E86169DB2F500C204FD /* Countries.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47EC5E85169DB2F500C204FD /* Countries.plist */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +51,16 @@
 		47601FB21696D9A6002868EE /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		47601FB31696D9A6002868EE /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		47601FB41696D9A6002868EE /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		47D2D77816B149E5002304FA /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar.png; sourceTree = "<group>"; };
+		47D2D77916B149E5002304FA /* disclosure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure.png; sourceTree = "<group>"; };
+		47D2D77A16B149E5002304FA /* sectionBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sectionBg.png; sourceTree = "<group>"; };
+		47D2D77B16B149E5002304FA /* shrink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shrink.png; sourceTree = "<group>"; };
+		47E8B41616A437A30034D294 /* Country.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Country.h; sourceTree = "<group>"; };
+		47E8B41716A437A30034D294 /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = "<group>"; };
+		47E8B41A16A437F20034D294 /* SQLiteOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteOperation.h; sourceTree = "<group>"; };
+		47E8B41B16A437F20034D294 /* SQLiteOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteOperation.m; sourceTree = "<group>"; };
+		47E8B41D16A438010034D294 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		47E8B41F16A44CF30034D294 /* country.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = country.sqlite; sourceTree = "<group>"; };
 		47EC5E85169DB2F500C204FD /* Countries.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Countries.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E8B41E16A438010034D294 /* libsqlite3.dylib in Frameworks */,
 				474572AF16956B1D00CDCEDD /* UIKit.framework in Frameworks */,
 				474572B116956B1D00CDCEDD /* Foundation.framework in Frameworks */,
 				474572B316956B1D00CDCEDD /* CoreGraphics.framework in Frameworks */,
@@ -63,6 +82,13 @@
 		4745729F16956B1D00CDCEDD = {
 			isa = PBXGroup;
 			children = (
+				47D2D77716B149E5002304FA /* Images */,
+				47E8B41F16A44CF30034D294 /* country.sqlite */,
+				47E8B41D16A438010034D294 /* libsqlite3.dylib */,
+				47E8B41A16A437F20034D294 /* SQLiteOperation.h */,
+				47E8B41B16A437F20034D294 /* SQLiteOperation.m */,
+				47E8B41616A437A30034D294 /* Country.h */,
+				47E8B41716A437A30034D294 /* Country.m */,
 				47EC5E85169DB2F500C204FD /* Countries.plist */,
 				474572B416956B1D00CDCEDD /* TableSearchExample */,
 				474572AD16956B1D00CDCEDD /* Frameworks */,
@@ -116,6 +142,17 @@
 				474572C416956B1D00CDCEDD /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47D2D77716B149E5002304FA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				47D2D77816B149E5002304FA /* bar.png */,
+				47D2D77916B149E5002304FA /* disclosure.png */,
+				47D2D77A16B149E5002304FA /* sectionBg.png */,
+				47D2D77B16B149E5002304FA /* shrink.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +213,11 @@
 				474572D916956D2000CDCEDD /* TableViewController.xib in Resources */,
 				47601FB61696D9A6002868EE /* DetailViewController.xib in Resources */,
 				47EC5E86169DB2F500C204FD /* Countries.plist in Resources */,
+				47E8B42016A44CF30034D294 /* country.sqlite in Resources */,
+				47D2D77C16B149E5002304FA /* bar.png in Resources */,
+				47D2D77D16B149E5002304FA /* disclosure.png in Resources */,
+				47D2D77E16B149E5002304FA /* sectionBg.png in Resources */,
+				47D2D77F16B149E5002304FA /* shrink.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +232,8 @@
 				474572BF16956B1D00CDCEDD /* AppDelegate.m in Sources */,
 				474572D816956D2000CDCEDD /* TableViewController.m in Sources */,
 				47601FB51696D9A6002868EE /* DetailViewController.m in Sources */,
+				47E8B41816A437A30034D294 /* Country.m in Sources */,
+				47E8B41C16A437F20034D294 /* SQLiteOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

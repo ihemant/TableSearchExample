@@ -16,6 +16,8 @@
     BOOL found;
     NSString *key;
     NSMutableDictionary *totalSections;
+    NSMutableArray *cellCount;
+    
     
 }
 @property(strong,nonatomic)  NSString *savedSearchTerm;
@@ -25,5 +27,8 @@
 @property (nonatomic, strong) UILocalizedIndexedCollation *collation;
 
 @property(strong,nonatomic)NSMutableArray *searchResults;
-
++ (NSArray *)countryNames;
++ (NSArray *)countryCodes;
++ (NSDictionary *)countryNamesByCode;
++ (NSDictionary *)countryCodesByName;
 @end
